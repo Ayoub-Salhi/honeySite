@@ -8,7 +8,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::select('idd', 'image', 'name', 'description', 'price')->get(); 
+        $products = Product::select('id', 'image', 'name', 'description', 'price')->get(); 
 
         return response()->json($products); 
     }
