@@ -12,10 +12,9 @@ class ProductController extends Controller
 
         return response()->json($products); 
     }
-    public function showDetails()
+    public function show(Product $product)
     {
-        // Fetch product details from your database or model
-        $product = Product::findOrFail(2);
+        
 
         // Return the product details as JSON
         return response()->json($product);
