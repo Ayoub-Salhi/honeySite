@@ -8,3 +8,4 @@ Route::get('/', function () {
 
 });
 Route::get('/api/products', [ProductController::class, 'index']);
+Route::get('/api/product', [ProductController::class, 'showDetails']);
